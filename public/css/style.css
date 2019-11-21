@@ -1,0 +1,141 @@
+.color333 {
+  color: #333333;
+}
+.color666 {
+  color: #6666;
+}
+.color999 {
+  color: #1a1a1a;
+}
+.mb35 {
+  margin-bottom: 0.35rem;
+}
+.font16 {
+  font-size: 16px;
+}
+.font13 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px;
+}
+.padLR30 {
+  padding: 0 0.3rem;
+}
+.header_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header_box .header_box_left {
+  width: 0;
+  flex: 0 0 1.76rem;
+  overflow: hidden;
+}
+.header_box .header_box_left .img {
+  width: 100%;
+  float: left;
+}
+.header_box .header_box_right {
+  width: 0;
+  flex: 1;
+  padding-top: 0.3rem;
+  padding-left: 0.38rem;
+}
+.desc {
+  padding: 0.7rem 0;
+  font-size: 14px;
+}
+.chapter {
+  font-size: 14px;
+}
+.content {
+  /*padding-top: 0.4rem;*/
+}
+.down_box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: #ffffff;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down_box .left {
+  width: 0.69rem;
+  height: 0.69rem;
+}
+.down_box .left .logo {
+  width: 0.69rem;
+  height: 0.69rem;
+}
+.down_box .center {
+  width: 0;
+  padding-left: 0.15rem;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.down_box .down {
+  width: 0;
+  flex: 0 0 1.97rem;
+  text-align: center;
+  height: 0.63rem;
+  line-height: 0.63rem;
+  background-color: #cc1313;
+  color: #ffffff;
+  border-radius: 3px;
+}
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.dialog .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6.2rem;
+  height: 5.69rem;
+  transform: translate(-50%, -50%);
+  background: url("../imgaes/dialog.png") no-repeat 0 0;
+  background-size: 100%;
+}
+.dialog .modal .close {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0.3rem;
+}
+.dialog .modal .warn {
+  color: #EC6C2B;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 1.2rem;
+}
+.dialog .modal .word {
+  padding-top: 0.6rem;
+  text-align: center;
+}
+
+
+.content .p1 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 32px;
+    padding: 0 2%;
+    text-align: justify;
+    text-indent: 36px;
+}

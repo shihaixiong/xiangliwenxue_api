@@ -1,0 +1,365 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin:0;
+    padding:0
+}
+h1, h2, h3, h4, h5, h6, input, textarea, select, button {
+    font-size:100%;
+    font-weight:normal
+}
+ul, ol {
+    list-style-type:none;
+    list-style-image:none
+}
+li {
+    list-style:none
+}
+html, body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none
+}
+a, img {
+    -webkit-touch-callout:none;
+    border:none;
+}
+a {
+    text-decoration:none;
+    color:#333
+}
+a:active, a:hover {
+    outline:0 none
+}
+a:focus {
+    outerline:1px dotted
+}
+img {
+    vertical-align:middle
+}
+sub, sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
+}
+sup {
+    top:-0.5em
+}
+sub {
+    bottom:-0.25em
+}
+body, button, input, select, textarea {
+    font-family:'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif
+}
+button, input, select, textarea {
+    font-family:inherit;
+    font-size:100%;
+    vertical-align:baseline
+}
+textarea {
+    overflow:auto;
+    vertical-align:top;
+    resize:vertical
+}
+section, article, aside, header, footer, nav, figure, menu {
+    display:block;
+    padding:0;
+    margin:0
+}
+* {
+    -webkit-tap-highlight-color:transparent
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust:none
+}
+input, button, select, textarea {
+    outline:none;
+    -webkit-appearance:none
+}
+input {
+    border:none
+}
+input:focus::-webkit-input-placeholder {
+    color:#efefef
+}
+html {
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+    font-size:62.5%
+}
+body {
+    font-size:14px;
+    line-height:1.5
+}
+article, aside, figcaption, figure, footer, header, nav, section, summary {
+    display:block
+}
+html, body {
+    width:100%;
+    min-width:320px;
+    min-height:100%
+}
+html {
+    height:100%
+}
+/* PC首页头部布局 */
+.pc-home-header {
+    width: 100%;
+    height: 122px;
+    border-bottom: 1px solid #CCC;
+}
+
+
+.pc-home-header .header-main {
+    width: 1009px;
+    margin: 18px auto 0;
+    /* overflow: hidden; */
+}
+
+.pc-home-header .header-main:after{
+    content: ' ';
+    clear: both;
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+/* //兼容IE6、7 */
+.pc-home-header .header-main{zoom:1;}    
+
+.pc-home-header .header-main .logo-img {
+    width: 214px;
+    height: 95px;
+    float: left;
+}
+
+.pc-home-header .header-main img {
+    width: 100%;
+}
+
+.pc-home-header .header-main .dowanload-store {
+    margin: 15px 24px 0 0;
+    width: 176px;
+    height: 56px;
+    float: right;
+    position: relative;
+}
+
+.pc-home-header .header-main .dowanload-android {
+    margin-top: 15px;
+    width: 176px;
+    height: 56px;
+    float: right;
+    position: relative;
+}
+
+.download-img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+}
+
+.pc-home-header .header-main .dowanload-store:hover {
+    padding-right: 60px;
+}
+
+.pc-home-header .header-main .dowanload-android:hover {
+    position: relative;
+    right: -60px;
+    /* padding-left: 60px; */
+
+}
+
+.pc-home-header .header-main .dowanload-store:hover .download-img {
+    display: block;
+    right: 0;    
+}
+
+.pc-home-header .header-main .dowanload-android:hover .download-img {
+    display: block;
+    left: -60px;    
+}
+
+/* PC首页主体布局 */
+.pc-home-main {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    height: 618px;
+    background: url("../img/home-bg.png") no-repeat center bottom;
+    background-size: auto 382px;
+    position: relative;
+}
+
+.pc-home-main img {
+    width: 100%;
+}
+
+.banner-list {
+    width: 776px;
+    height: 584px;
+    position: absolute;
+    left: 50%;
+    margin-left: -384px;
+    top: 34px;
+}
+
+.banner-list:after {
+    content: ' ';
+    clear: both;
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+/* //兼容IE6、7 */
+.banner-list {zoom:1;} 
+
+.banner-list .banner-left {
+    width: 360px;
+    float: left;
+}
+.banner-list .banner-right {
+    width: 360px;
+    float: right;
+}
+
+/* PC首页底部布局 */
+.pc-home-footer .company-introduction {
+    height:24px;
+    font-size:24px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:#333;
+    line-height:24px;
+    overflow: hidden;
+    width: 235px;
+    margin: 0 auto 18px;
+}
+
+.pc-home-footer .company-introduction .text {
+    float: left;
+    width: 135px;
+    text-align: center;
+}
+
+.pc-home-footer .company-introduction .line {
+    float: left;
+    margin-top: 11px;
+    width:50px;
+    height:2px;
+    background:#333;
+}
+
+.pc-home-footer .company-desc {
+    margin: 0 auto 73px;
+    width:501px;
+    height:57px;
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:#666;
+    line-height:36px;
+    text-align: center;
+}
+
+
+.mobile-home-wrapper {
+    display: none;
+}
+@media only screen and (max-width: 750px) {
+    html, body {
+        height: 100%;
+    }
+
+    .pc-home-wrapper {
+        display: none;
+    }
+
+    .mobile-home-wrapper {
+        height: 100%;
+        display: block;
+        /* background: #0f81b7; */
+        background: #eee;
+        position: relative;
+    }
+
+    .mobile-home-header {
+        width: 100%;
+        height: .4rem;
+        background: #FFF;
+        overflow: hidden;
+    }
+
+    .mobile-home-header .logo-img {
+        float: left;
+        margin: .04rem .41rem 0 0;
+        width: .744rem;
+        height: .336rem;
+    }
+
+    .mobile-home-header img {
+        width: 100%;
+    }
+
+    .mobile-home-header .dowanload-android {
+        float: right;
+        width: 0.7rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        margin-top: 0.05rem;
+    }
+
+    .mobile-home-header .dowanload-store {
+        float: right;
+        width: 0.7rem;
+        margin-top: 0.05rem;
+        margin-left: 0.1rem;
+    }
+
+    .mobile-home-main {
+        position: absolute;
+        top: 50%;
+        margin-top: -2.4rem;
+        left: 50%;
+        margin-left: -1.638rem;
+        width: 3.276rem;
+        /* height: 5.84rem; */
+        height: 5.3rem;
+        overflow: hidden;
+        /* border: 1px solid #eee; */
+        border-radius: 6px;
+    }
+
+    .mobile-home-main .swiper-container .swiper-button-prev {
+        top: 0.4rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        left: 50%;
+        margin-left: -0.15rem;
+        transform: rotate(90deg);
+        transform-origin:center;
+    }
+
+    .mobile-home-main .swiper-container .swiper-button-next {
+        width: 0.3rem;
+        height: 0.3rem;
+        top: 5.1rem;
+        right: 50%;
+        margin-right: -0.15rem;
+        transform: rotate(90deg);
+        transform-origin:center;
+    }
+
+
+    .swiper-container {
+        /* width: 3.6rem; */
+        width: 100%;
+        height: 100%;
+        
+    }  
+    .swiper-container img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,319 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin:0;
+    padding:0
+}
+h1, h2, h3, h4, h5, h6, input, textarea, select, button {
+    font-size:100%;
+    font-weight:normal
+}
+ul, ol {
+    list-style-type:none;
+    list-style-image:none
+}
+li {
+    list-style:none
+}
+html, body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none
+}
+a, img {
+    -webkit-touch-callout:none;
+    border:none;
+}
+a {
+    text-decoration:none;
+    color:#333
+}
+a:active, a:hover {
+    outline:0 none
+}
+a:focus {
+    outerline:1px dotted
+}
+img {
+    vertical-align:middle
+}
+sub, sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
+}
+sup {
+    top:-0.5em
+}
+sub {
+    bottom:-0.25em
+}
+body, button, input, select, textarea {
+    font-family:'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif
+}
+button, input, select, textarea {
+    font-family:inherit;
+    font-size:100%;
+    vertical-align:baseline
+}
+textarea {
+    overflow:auto;
+    vertical-align:top;
+    resize:vertical
+}
+section, article, aside, header, footer, nav, figure, menu {
+    display:block;
+    padding:0;
+    margin:0
+}
+* {
+    -webkit-tap-highlight-color:transparent
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust:none
+}
+input, button, select, textarea {
+    outline:none;
+    -webkit-appearance:none
+}
+input {
+    border:none
+}
+input:focus::-webkit-input-placeholder {
+    color:#efefef
+}
+html {
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+    font-size:62.5%
+}
+body {
+    font-size:14px;
+    line-height:1.5
+}
+article, aside, figcaption, figure, footer, header, nav, section, summary {
+    display:block
+}
+html, body {
+    width:100%;
+    min-width:320px;
+    min-height:100%
+}
+html {
+    height:100%
+}
+
+
+/* 页面的布局 */
+
+.page-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.page-wrapper .page-header {
+    position: fixed;
+    top: 0;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    height: 80px;
+    border-bottom: 1px solid #CCC;
+    overflow: hidden;
+    background: #FFF;
+    z-index: 10;
+}
+.page-wrapper .page-header .logo-img {
+    float: left;
+    margin: 18px 82px 0 0;
+    width: 124px;
+    height: 56px;
+}
+
+.page-wrapper .page-header .logo-img img {
+    width: 100%;
+}
+
+.page-wrapper .page-header .nav-list {
+    float: left;
+    overflow: hidden;
+}
+
+.page-wrapper .page-header .nav-list .nav-item {
+    float: left;
+    margin-right: 34px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 4px solid #FFF;
+    box-sizing: border-box;
+    padding: 0 4px;
+    font-size: 16px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color: #999;
+}
+
+.page-wrapper .page-header .nav-list .nav-item:hover {
+    color: #699cf3;
+}
+
+.page-wrapper .page-header .nav-list .nav-item-check {
+    color: #3B7EEF;
+    border-color: #3B7EEF;
+}
+
+.page-wrapper .page-header .nav-list .nav-item-check:hover {
+    color: #3B7EEF;
+}
+
+.page-main {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 49px;
+    min-height: 455px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    border:1px solid rgba(222,222,222,1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.close-btn {
+    position: absolute;
+    right: 31px;
+    top: 37px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/close-btn.png") no-repeat center;
+    background-size: 100%;
+}
+
+.title {
+    margin: 24px 0 9px 0;
+    font-size:22px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+
+.item-name {
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 14px;
+    font-size:16px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    border-bottom: 1px solid rgba(244,245,248,1);
+    overflow: hidden;
+}
+
+.item-name-check {
+    color:rgba(59,126,239,1);
+}
+
+.icon {
+    margin-left: 20px;
+    width: 36px;
+    height: 18px;
+    background: url("../img/fufei-icon.png") no-repeat center;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 750px) {
+    .page-wrapper {
+        width: auto;
+        margin: 0 0.1rem;
+        box-sizing: border-box;
+    }
+
+    .page-wrapper .page-header {
+        height: .4rem;
+        position: fixed;
+        top: 0;
+        left: 0.1rem;
+        margin-left: 0;
+        width: auto;
+        right: 0.1rem
+    }
+    .page-wrapper .page-header .logo-img {
+        margin: .09rem .41rem 0 0;
+        width: .62rem;
+        height: .28rem;
+    }
+    
+    .page-wrapper .page-header .nav-list .nav-item {
+        margin-right: .17rem;
+        height: .4rem;
+        line-height: .4rem;
+        border-bottom: 0.02rem solid #FFF;
+        padding: 0 .02rem;
+        font-size: .08rem;
+        font-weight:400;
+        color: #999;
+    }
+    
+    .page-wrapper .page-header .nav-list .nav-item-check {
+        color: #3B7EEF;
+        border-color: #3B7EEF;
+    }
+    
+    .page-wrapper .page-header .nav-list .nav-item-check:hover {
+        color: #999;
+    }
+
+    .page-main {
+        position: relative;
+        margin-top: .55rem;
+        margin-bottom: 0.245rem;
+        min-height: 2.275rem;
+        padding: 0 .14rem;
+        height: auto;
+        border:1px solid rgba(222,222,222,1);
+        border-radius: 6px;
+    }
+    
+    .close-btn {
+        position: absolute;
+        right: .155rem;
+        top: .165rem;
+        width: .14rem;
+        height: .14rem;
+        background: url("../img/close-btn.png") no-repeat center;
+        background-size: 100%;
+    }
+
+    .title {
+        margin: .12rem 0 .045rem 0;
+        font-size: .11rem;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+    }
+    
+    .item-name {
+        display: block;
+        margin-top: 0.075rem;
+        padding-bottom: 0.07rem;
+        font-size: 0.08rem;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(102,102,102,1);
+        overflow: hidden;
+    }
+    
+    .item-name-check {
+        color:rgba(59,126,239,1);
+    }
+    
+    .icon {
+        margin-left: .1rem;
+        width: .18rem;
+        height: .09rem;
+        background: url("../img/fufei-icon.png") no-repeat center;
+        background-size: 100%;
+        vertical-align: middle;
+    }
+    
+}
